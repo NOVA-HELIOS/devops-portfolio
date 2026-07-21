@@ -6,6 +6,7 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -18,7 +19,9 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) return <Loader />;
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <div className="bg-[#050816] text-white overflow-x-hidden">
@@ -29,6 +32,7 @@ function App() {
         <About />
         <Skills />
         <Experience />
+        <Projects />
       </main>
     </div>
   );
