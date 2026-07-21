@@ -10,6 +10,7 @@ import Projects from "./components/Projects/Projects";
 import Pipeline from "./components/Pipeline/Pipeline";
 import GithubStats from "./components/GithubStats/GithubStats";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -38,6 +39,8 @@ function App() {
         <GithubStats />
         <Contact />
       </main>
+
+      <Footer />
     </div>
   );
 }
