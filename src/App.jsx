@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+
 import Loader from "./components/Loader/Loader";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -14,13 +16,19 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) return <Loader />;
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
-    <>
+    <div className="bg-[#050816] text-white overflow-x-hidden">
       <Navbar />
-      <Hero />
-    </>
+
+      <main>
+        <Hero />
+        <About />
+      </main>
+    </div>
   );
 }
 
