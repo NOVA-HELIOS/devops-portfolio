@@ -7,6 +7,7 @@ import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
+import Pipeline from "./components/Pipeline/Pipeline";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -33,6 +34,7 @@ function App() {
         <Skills />
         <Experience />
         <Projects />
+        <Pipeline />
       </main>
     </div>
   );
