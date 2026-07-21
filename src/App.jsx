@@ -9,6 +9,7 @@ import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
 import Pipeline from "./components/Pipeline/Pipeline";
 import GithubStats from "./components/GithubStats/GithubStats";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -35,6 +36,7 @@ function App() {
         <Projects />
         <Pipeline />
         <GithubStats />
+        <Contact />
       </main>
     </div>
   );
